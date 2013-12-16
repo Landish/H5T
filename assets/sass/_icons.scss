@@ -1,0 +1,8 @@
+$icon-sprite-dimensions: true;
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
