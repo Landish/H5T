@@ -2,5 +2,7 @@ $experimental-support-for-svg: true;
 @import "compass";
 @import "compass/reset";
 @import "mixins";
-@import "icons";
+//@import "icons"; // uncomment this line, when you'll have some .png files in /images/icon/ folder
 @import "base";
+@import "header";
+@import "footer";
