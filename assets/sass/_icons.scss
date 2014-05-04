@@ -1,4 +1,6 @@
 $icon-sprite-dimensions: true;
+$icon-layout: smart;
+$icon-sprite-base-class: '.icon';
 @import "icon/*.png";
 @include all-icon-sprites;
 
