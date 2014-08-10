@@ -12,6 +12,20 @@ _.mixin({
         }).join(' ');
     },
     /**
+     * Format Money
+     * @param amount
+     * @param n
+     * @param x
+     * @param s
+     * @param c
+     * @returns {string}
+     */
+    formatMoney : function(amount, n, x, s, c) {
+        var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
+            num = amount.toFixed(Math.max(0, ~~n));
+        return (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
+    },
+    /**
      * Console Log
      * @param message
      * @returns {*}
