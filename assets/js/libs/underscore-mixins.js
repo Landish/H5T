@@ -1,5 +1,16 @@
 _.mixin({
 
+
+    /**
+     * Render HTML Template
+     * @param template
+     * @param data
+     * @returns {*}
+     */
+    render: function(template, data) {
+        return _.template(template, data, { interpolate: /\{\{(.+?)\}\}/g, escape: /\{\{(.+?)\}\}/g, evaluate: /\{\{(.+?)\}\}/g });
+    },
+
     /**
      * Converts JS Object into HTML Attributes
      * @param obj
