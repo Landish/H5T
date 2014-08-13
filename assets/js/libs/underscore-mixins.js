@@ -2,6 +2,28 @@ _.mixin({
 
 
     /**
+     * Get Window Location Hash
+     *
+     * If no {hash} param is passed, it will return the current hash.
+     * Otherwise it will check if passed {hash} param is equal to location hash.
+     * @param hash
+     * @returns {string}
+     */
+    hash: function(hash) {
+      return _.isUndefined(hash) ? window.location.hash : '#' + hash === window.location.hash;
+    },
+
+    /**
+     * Get URL Parameter Name
+     * @param name
+     * @returns {Array|{index: number, input: string}|string}
+     */
+    param: function(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    },
+
+    /**
      * Render HTML Template
      * @param template
      * @param data
