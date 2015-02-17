@@ -1,6 +1,7 @@
 {
-  "name": "h5t",
-  "dependencies": {
-    "jquery": "~2.1.3"
-  }
+    "name": "h5t",
+    "description": "Custom HTML5 Project Starter Kit Template",
+    "dependencies": {
+        "jquery": "~2.1.3"
+    }
 }
