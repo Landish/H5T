@@ -1,0 +1,6 @@
+{
+  "name": "h5t",
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
