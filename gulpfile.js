@@ -52,3 +52,6 @@ gulp.task('watch:css', function() {
 
 // Watch for CSS and Javascript files
 gulp.task('watch', ['watch:css', 'watch:js']);
+
+// Watch for CSS and Javascript files via default task
+gulp.task('default', ['watch']);
