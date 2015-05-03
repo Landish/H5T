@@ -1,4 +1,6 @@
 .idea
 .sass-cache
 node_modules
-src/packages
+dist/css
+dist/js
+src/components
