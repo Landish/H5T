@@ -1,6 +1,0 @@
-{
-  "assetsDir" : "src/",
-  "cssOutput" : "dist/css",
-  "publicDir" : "dist",
-  "bowerDir"  : "src/components"
-}

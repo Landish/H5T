@@ -1,7 +1,11 @@
+@import "settings";
 @import "compass";
 @import "compass/reset";
-@import "mixins";
 //@import "icons"; // uncomment this line, when you'll have some .png files in /dist/images/icon/ folder
 @import "base";
-@import "header";
-@import "footer";
+
+// Load all mixins.
+@import "mixins/*";
+
+// Load all modules.
+@import "modules/*";

@@ -1,6 +1,7 @@
 .idea
 .sass-cache
 node_modules
+bower_components
+*map
 dist/css
 dist/js
-src/components
