@@ -1,8 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.8.8",
-    "laravel-elixir": "*",
-    "laravel-elixir-sass-compass": "^0.3.0"
+    "gulp": "*",
+    "laravel-elixir": "*"
   }
 }

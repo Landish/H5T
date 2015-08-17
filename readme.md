@@ -9,17 +9,8 @@ Run ```bower install``` or ```bower install <package> --save``` command to insta
 # Images
 Put your images into `/dist/images/` directory.
 
-# Icons
-
-Put your icons in `/dist/images/icon/` directory. 
-And uncomment the following line in `/src/scss/app.scss` file:
-```css
-//@import "icons"; // uncomment this line, when you'll have some .png files in /dist/images/icon/ folder
-```
 # Commands
 
 `gulp` - run all gulp tasks.
 
-`gulp watch` - watch all assets.
-
-`gulp compass` - watch all sass/compass files.
+`gulp watch --production` - watch all assets.
