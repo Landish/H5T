@@ -2,5 +2,15 @@
 $font-family: Arial, sans-serif;
 $font-size: 12px;
 
+// Body settings.
+$body-bg: white;
+
 // Grid settings.
 $container-width: 1200px;
+
+// BEM settings.
+$bem: (
+    'element': '_',
+    'modifier': '-',
+    'state': '-'
+);

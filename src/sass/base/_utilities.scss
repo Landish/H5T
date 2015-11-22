@@ -21,3 +21,7 @@
 .float-none {
   float: none;
 }
+
+.clearfix {
+  @include clearfix;
+}

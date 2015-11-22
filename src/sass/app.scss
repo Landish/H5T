@@ -1,13 +1,10 @@
 // Load base stuff.
+@import "base/bem";
+@import "base/bourbon";
 @import "base/settings";
-@import "base/reset";
+@import "base/normalize";
 @import "base/utilities";
 @import "base/base";
-@import "base/typography";
-
-// Load all mixins.
-@import "mixins/placeholder";
-@import "mixins/triangle";
 
 // Load all modules.
 @import "modules/header";

@@ -1,16 +1,28 @@
 # NPM Packages
 
-Run the ```npm install``` or ```npm i``` command in terminal to install all necessary NPM packages.
+Install all packages:
 
-# Bower Components
-
-Run ```bower install``` or ```bower install <package> --save``` command to install Bower packages.
+```
+$ npm install
+```
 
 # Images
-Put your images into `/dist/images/` directory.
+Put your images into directory:
+
+```
+/dist/images/
+```
 
 # Commands
 
-`gulp` - run all gulp tasks.
+Run all gulp tasks:
 
-`gulp watch --production` - watch all assets.
+```
+$ gulp
+```
+
+Watch all assets:
+
+```
+$ gulp watch --production
+```
