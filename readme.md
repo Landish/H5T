@@ -6,6 +6,15 @@ Install all packages:
 $ npm install
 ```
 
+# Bower Packages
+
+Install all packages:
+
+```
+$ bower install
+```
+
+
 # Images
 Put your images into directory:
 
