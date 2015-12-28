@@ -3,12 +3,5 @@
   "devDependencies": {
     "gulp": "*",
     "laravel-elixir": "*"
-  },
-  "dependencies": {
-    "bourbon": "^4.2.6",
-    "gridle": "^2.0.43",
-    "jquery": "^2.1.4",
-    "normalize-scss": "^4.0.0",
-    "sass-bem": "^0.2.1"
   }
 }
