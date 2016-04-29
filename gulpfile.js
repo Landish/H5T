@@ -1,4 +1,9 @@
+// Disable Desktop notifications.
+process.env.DISABLE_NOTIFIER = true;
+
 var elixir = require('laravel-elixir');
+var gulp = require('gulp'),
+    fontcustom = require('gulp-fontcustom');
 
 // Elixir configuration.
 elixir.config.assetsPath = 'src';
@@ -7,6 +12,38 @@ elixir.config.publicPath = 'dist';
 elixir(function(mix) {
 
     mix.sass('app.scss');
-    mix.sass('grid.scss');
 
+    // copy fonts
+    mix.copy(
+        elixir.config.assetsPath + '/fonts/*{.eot,.svg,.ttf,.woff,.woff2}',
+        elixir.config.publicPath + '/fonts'
+    );
+
+    // copy images
+    mix.copy(
+        elixir.config.assetsPath + '/images/*{.png,.jpg,.gif}',
+        elixir.config.publicPath + '/images'
+    );
+
+    mix.scripts([
+
+        // 3rd party libraries
+        './bower_components/jquery/dist/jquery.js',
+        './bower_components/slick-carousel/slick/slick.js',
+
+        'map.js',
+        'app.js'
+    ], 'dist/js/app.js');
+
+});
+
+
+gulp.task('icons', function() {
+    gulp.src(elixir.config.assetsPath + "/icons")
+        .pipe(fontcustom({
+            font_name: 'Icon',
+            preprocessor_path: '../fonts',
+            templates: 'scss'
+        }))
+        .pipe(gulp.dest(elixir.config.assetsPath + '/fonts'))
 });

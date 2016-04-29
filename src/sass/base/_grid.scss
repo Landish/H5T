@@ -1,0 +1,28 @@
+// Do not generate settings in JSON format in CSS.
+$gridle-generate-json-settings : false;
+
+// Setup Gridle.
+@include gridle_setup();
+
+// Add .mobile and .tablet breakpoint CSS classes.
+@include gridle_register_state(mobile, (
+    max-width : 480px
+));
+
+@include gridle_register_state(moblet, (
+    min-width : 481px,
+    max-width : 768px
+));
+
+@include gridle_register_state(tablet, (
+    min-width : 769px,
+    max-width : 992px
+));
+
+// Generate all CSS classes.
+@include gridle_generate_classes();
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}

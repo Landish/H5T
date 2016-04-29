@@ -1,14 +1,8 @@
 // Load base stuff.
-@import "base/bem";
-@import "base/bourbon";
-@import "base/settings";
-@import "base/normalize";
-@import "base/utilities";
-@import "base/base";
+@import "base/all";
 
-// Load all modules.
-@import "modules/header";
-@import "modules/button";
-@import "modules/form";
-@import "modules/footer";
+// Load all component.
+@import "components/all";
 
+// Load all objects.
+@import "objects/all";
