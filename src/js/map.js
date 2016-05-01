@@ -1,34 +1,49 @@
+// initialize google maps
 function initMap() {
 
-    var $map = $('#map');
+    // map container
+    var container = document.getElementById('map');
 
     // if map was not found
-    // return false
-    if(!$map.length) {
-        return false;
-    }
+    if (!container) return false;
 
+    // pin coordinates
     var positions = {
-        lat: parseFloat($map.data('lat')),
-        lng: parseFloat($map.data('lng'))
+        lat: parseFloat(container.dataset['lat'] || '41.732438'),
+        lng: parseFloat(container.dataset['lng'] || '44.7688136')
     };
 
-    var map = new google.maps.Map($map[0], {
-        zoom: $map.data('zoom'),
-        disableDefaultUI: true,
-        zoomControl: true,
-        scrollwheel: false,
+    // zoom level
+    var zoom = parseInt(container.dataset['zoom'] || '15');
+
+    // zoom control
+    var zoomControl = container.dataset['zoomControl'] != 'false';
+
+    // scroll wheel
+    var scrollwheel = container.dataset['scrollwheel'] != 'false';
+
+    // disable default ui
+    var disableDefaultUI = container.dataset['disableDefaultUi'] != 'false';
+
+    // setup a map
+    var map = new google.maps.Map(container, {
+        zoom: zoom,
+        disableDefaultUI: disableDefaultUI,
+        zoomControl: zoomControl,
+        scrollwheel: scrollwheel,
         center: positions
     });
 
+    // setup a marker
     var marker = new google.maps.Marker({
-        position: positions,
-        map: map,
-        icon:'/dist/images/map-pin.png'
+        position: positions
     });
 
+    // set marker to current map
+    marker.setMap(map);
 
-    google.maps.event.addDomListener(window, "resize", function() {
+    // responsive map
+    google.maps.event.addDomListener(window, "resize", function () {
         var center = map.getCenter();
         google.maps.event.trigger(map, "resize");
         map.setCenter(center);
