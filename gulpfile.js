@@ -2,8 +2,7 @@
 process.env.DISABLE_NOTIFIER = true;
 
 var elixir = require('laravel-elixir');
-var gulp = require('gulp'),
-    fontcustom = require('gulp-fontcustom');
+require('laravel-elixir-icons');
 
 // Elixir configuration.
 elixir.config.assetsPath = 'src';
@@ -11,7 +10,15 @@ elixir.config.publicPath = 'dist';
 
 elixir(function(mix) {
 
+    // mix sass
     mix.sass('app.scss');
+
+    // create custom icons
+    mix.icons({
+        relativeCssDir: "../fonts/",
+        iconFontName: "Icon",
+        sassFileName: "base/_icons.scss"
+    });
 
     // copy fonts
     mix.copy(
@@ -25,6 +32,7 @@ elixir(function(mix) {
         elixir.config.publicPath + '/images'
     );
 
+    // mix scripts
     mix.scripts([
 
         // 3rd party libraries
@@ -35,15 +43,4 @@ elixir(function(mix) {
         'app.js'
     ], 'dist/js/app.js');
 
-});
-
-
-gulp.task('icons', function() {
-    gulp.src(elixir.config.assetsPath + "/icons")
-        .pipe(fontcustom({
-            font_name: 'Icon',
-            preprocessor_path: '../fonts',
-            templates: 'scss'
-        }))
-        .pipe(gulp.dest(elixir.config.assetsPath + '/fonts'))
 });

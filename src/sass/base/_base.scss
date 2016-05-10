@@ -1,6 +1,11 @@
 // Import settings.
 @import "settings";
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   background: $body-bg;
   color: $font-color;

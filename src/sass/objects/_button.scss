@@ -2,5 +2,17 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  outline: 0;
+  border: 0;
+
+  @include m(default) {
+
+  }
+
+  @include m(primary) {
+
+  }
+
+  @include m(secondary) {
+  }
+
 }

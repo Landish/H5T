@@ -1,0 +1,22 @@
+// CSS Sticky Footer
+// Source: http://ryanfait.com/html5-sticky-footer/
+@mixin sticky-footer {
+
+  html, body {
+    height: 100%;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    margin: 0 auto (-$footer-height);
+  }
+
+  .c-footer, .push {
+    height: $footer-height;
+  }
+
+}
+
+@if($use-sticky-footer) {
+  @include sticky-footer;
+}

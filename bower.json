@@ -8,7 +8,7 @@
     "bourbon": "~4.2.6",
     "sass-bem": "^2.5.3",
     "slick-carousel": "^1.5.9",
-    "sanitize-css": "^3.3.0",
-    "animate-sass": "^0.6.6"
+    "animate-sass": "^0.6.6",
+    "css-hamburgers": "^0.5.0"
   }
 }

@@ -1,6 +1,9 @@
 // Load base stuff.
 @import "base/all";
 
+// Load all mixins.
+@import "mixins/all";
+
 // Load all component.
 @import "components/all";
 
