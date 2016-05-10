@@ -10,6 +10,8 @@
 * [HTML5 CSS Sticky Footer](http://ryanfait.com/html5-sticky-footer/)
 * [Hamburgers](https://github.com/jonsuh/hamburgers)
 * [animate.css](https://github.com/daneden/animate.css)
+* [Bourbon](http://bourbon.io/)
+* [GRIDLE{.SCSS}](http://gridle.org/)
 * [Laravel Elixir](https://laravel.com/docs/master/elixir)
 * [laravel-elixir-icons](https://github.com/codezero-be/laravel-elixir-icons)
 
