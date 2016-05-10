@@ -15,6 +15,22 @@
 * [Laravel Elixir](https://laravel.com/docs/master/elixir)
 * [laravel-elixir-icons](https://github.com/codezero-be/laravel-elixir-icons)
 
+
+### Google Maps Usage
+```html
+<div id="map" data-zoom="15" data-zoom-control="true|false" data-scroll-wheel="true|false" data-disable-default-ui="true|false" data-lat="41.728216225923" data-lng="44.760446548462"></div>
+```
+
+### Hamburger Menu
+```html
+<button class="hamburger hamburger--collapse" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+```
+
+
 ### NPM Packages
 
 Install all packages:
