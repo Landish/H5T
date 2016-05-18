@@ -1,5 +1,5 @@
 // Do not generate settings in JSON format in CSS.
-$gridle-generate-json-settings : false;
+$gridle-generate-json-settings: false;
 
 // Setup Gridle.
 @include gridle_setup();
