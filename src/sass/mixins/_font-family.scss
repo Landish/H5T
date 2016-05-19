@@ -1,0 +1,11 @@
+@mixin font-family {
+  #{$font-family-selector} {
+    font-family: $font-family;
+  }
+
+  @if(($font-family != $font-family-secondary) and ($font-family-secondary != false)) {
+    #{$font-family-secondary-selector} {
+      font-family: $font-family-secondary;
+    }
+  }
+}

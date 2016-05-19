@@ -1,7 +1,14 @@
-// Font settings.
-$font-family: Arial, sans-serif !default;
+// Global font settings.
 $font-color: #333 !default;
 $font-size: 12px !default;
+
+// Primary font settings.
+$font-family: Arial, sans-serif !default;
+$font-family-selector: 'body';
+
+// Secondary font settings.
+$font-family-secondary: false !default;
+$font-family-secondary-selector: $font-family-selector !default;
 
 // Body settings.
 $body-bg: white !default;

@@ -9,6 +9,8 @@ html {
 body {
   background: $body-bg;
   color: $font-color;
-  font-family: $font-family;
   font-size: $font-size;
 }
+
+// Include font-family mixin.
+@include font-family;
