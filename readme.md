@@ -1,11 +1,11 @@
-# Custom HTML5 Project Starter Kit Template
-*Custom HTML5 Project Starter Kit Template*
+# HTML5 Boilerplate
+*Custom HTML5 Boilerplate*
 
 ### Dependencies and 3rd-party Libraries
 * [reset.css](https://github.com/adamstac/meyer-reset)
 * [sass-bem](https://github.com/zgabievi/sass-bem)
 * [jQuery](http://jquery.com/)
-* [slick](http://kenwheeler.github.io/slick/)
+* [slick](http://kenwheeler.github.io/slick/) (slider)
 * [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/)
 * [HTML5 CSS Sticky Footer](http://ryanfait.com/html5-sticky-footer/)
 * [Hamburgers](https://github.com/jonsuh/hamburgers)
@@ -39,20 +39,18 @@ Install all packages:
 $ npm install
 ```
 
-### Bower Packages
-
-Install all packages:
-
-```
-$ bower install
-```
-
 
 ### Images
 Put your images into directory:
 
 ```
-/dist/images/
+/src/images/
+```
+
+and run the following command: 
+
+```
+gulp copy
 ```
 
 ### Commands

@@ -8,10 +8,11 @@ require('laravel-elixir-icons');
 elixir.config.assetsPath = 'src';
 elixir.config.publicPath = 'dist';
 
-elixir(function(mix) {
+elixir(function (mix) {
 
     // mix sass
     mix.sass('app.scss');
+    mix.sass('print.scss');
 
     // create custom icons
     mix.icons({
@@ -36,8 +37,9 @@ elixir(function(mix) {
     mix.scripts([
 
         // 3rd party libraries
-        './bower_components/jquery/dist/jquery.js',
-        './bower_components/slick-carousel/slick/slick.js',
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/slick-carousel/slick/slick.js',
+        './node_modules/jquery-modal/jquery.modal.js',
 
         'map.js',
         'app.js'

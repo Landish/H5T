@@ -1,29 +1,29 @@
-.text-right {
-  text-align: right;
-}
-
-.text-left {
+@include u(text-left) {
   text-align: left;
 }
 
-.text-center {
+@include u(text-center) {
   text-align: center;
 }
 
-.float-right {
-  float: right;
+@include u(text-right) {
+  text-align: right;
 }
 
-.float-left {
+@include u(float-left) {
   float: left;
 }
 
-.float-none {
+@include u(float-right) {
+  float: right;
+}
+
+@include u(float-none) {
   float: none;
 }
 
-.clearfix {
-  //@include clearfix;
+@include u(clearfix) {
+  @include clearfix;
 }
 
 @include u(animation) {

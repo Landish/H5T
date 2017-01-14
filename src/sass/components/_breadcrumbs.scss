@@ -1,12 +1,25 @@
 @include c(breadcrumbs) {
-
+  //
   @include e(item) {
     @include is(active) {
-      @include e(link) {}
+      @include e(link) {
+        @extend %breadcrumbs-state-active !optional;
+      }
     }
   }
 
   @include e(link) {
-
+    //
+    @include hover {
+      @extend %breadcrumbs-state-hover !optional;
+    }
   }
+}
+
+%breadcrumbs-state-hover {
+  //
+}
+
+%breadcrumbs-state-active {
+  @extend %breadcrumbs-state-hover !optional;
 }

@@ -5,6 +5,14 @@
     "laravel-elixir": "*"
   },
   "dependencies": {
-    "laravel-elixir-icons": "^2.0.4"
+    "animate-sass": "^0.6.6",
+    "bourbon": "^4.2.7",
+    "gridle": "^2.0.48",
+    "hamburgers": "^0.7.0",
+    "jquery": "^3.1.1",
+    "jquery-modal": "^0.8.0",
+    "laravel-elixir-icons": "^2.0.4",
+    "sass-bem": "^2.6.5",
+    "slick-carousel": "^1.6.0"
   }
 }

@@ -1,0 +1,27 @@
+@include c(menu) {
+  //
+  @include e(item) {
+    @include is(active) {
+      @include e(link) {
+        //
+        @extend %menu-state-active !optional;
+      }
+    }
+  }
+
+  @include e(link) {
+    //
+    @include hover {
+      //
+      @extend %menu-state-hover !optional;
+    }
+  }
+}
+
+%menu-state-hover {
+  //
+}
+
+%menu-state-active {
+  @extend %menu-state-hover !optional;
+}

@@ -1,18 +1,19 @@
-@include o(button) {
+@include c(button) {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   border: 0;
 
   @include m(default) {
-
+    //
   }
 
   @include m(primary) {
-
+    //
   }
 
   @include m(secondary) {
+    //
   }
 
 }

@@ -1,5 +1,5 @@
 // Import settings.
-@import "settings";
+@import "../settings";
 
 html {
   -ms-text-size-adjust: 100%;
@@ -13,4 +13,5 @@ body {
 }
 
 // Include font-family mixin.
+@import "../mixins/font-family";
 @include font-family;

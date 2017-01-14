@@ -4,8 +4,8 @@
 // Load all mixins.
 @import "mixins/all";
 
+// Load vendor (non-sass) libraries.
+@import "vendor/all";
+
 // Load all component.
 @import "components/all";
-
-// Load all objects.
-@import "objects/all";

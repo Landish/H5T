@@ -1,0 +1,25 @@
+@include c(nav) {
+  //
+  @include e(item) {
+    //
+    @include is(active) {
+      @include e(link) {
+        @extend %nav-state-active !optional;
+      }
+    }
+  }
+
+  @include e(link) {
+    @include hover {
+      @extend %nav-state-hover !optional;
+    }
+  }
+}
+
+%nav-state-hover {
+  //
+}
+
+%nav-state-active {
+  @extend %nav-state-hover !optional;
+}
