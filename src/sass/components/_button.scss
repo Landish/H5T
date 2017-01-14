@@ -1,7 +1,12 @@
 @include c(button) {
   display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
   text-decoration: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
   border: 0;
 
   @include m(default) {

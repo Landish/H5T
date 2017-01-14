@@ -4,12 +4,29 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  line-height: 1.15;
 }
 
 body {
   background: $body-bg;
   color: $font-color;
   font-size: $font-size;
+}
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+table {
+  width: 100%;
 }
 
 // Include font-family mixin.
