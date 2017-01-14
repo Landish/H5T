@@ -6,6 +6,9 @@
 
   @include e(input) {
     //
+    @include placeholder {
+      //
+    }
   }
 
   @include e(textarea) {
