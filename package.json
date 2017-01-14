@@ -1,17 +1,23 @@
 {
+  "name" : "HTML5-Boilerplate",
+  "description" : "Custom HTML5 Boilerplate",
   "private": true,
+  "scripts": {
+    "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "clean" : "rm -rf dist"
+  },
   "devDependencies": {
-    "gulp": "*",
-    "laravel-elixir": "*"
+    "laravel-mix": "*"
   },
   "dependencies": {
     "animate-sass": "^0.6.6",
-    "bourbon": "^4.2.7",
     "gridle": "^2.0.48",
     "hamburgers": "^0.7.0",
     "jquery": "^3.1.1",
     "jquery-modal": "^0.8.0",
-    "laravel-elixir-icons": "^2.0.4",
     "sass-bem": "^2.6.5",
     "slick-carousel": "^1.6.0"
   }

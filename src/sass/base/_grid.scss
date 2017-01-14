@@ -1,3 +1,9 @@
+// gridle
+@import "../../../node_modules/gridle/sass/gridle/gridle";
+
+// import settings
+@import "../settings";
+
 // Do not generate settings in JSON format in CSS.
 $gridle-generate-json-settings: false;
 

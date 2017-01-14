@@ -1,5 +1,5 @@
 // initialize google maps
-function initMap() {
+export default function initMap() {
 
     // map container
     var container = document.getElementById('map');
@@ -50,3 +50,5 @@ function initMap() {
     });
 
 }
+
+window.initMap = initMap;

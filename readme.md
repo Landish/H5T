@@ -7,13 +7,11 @@
 * [jQuery](http://jquery.com/)
 * [slick](http://kenwheeler.github.io/slick/) (slider)
 * [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/)
-* [HTML5 CSS Sticky Footer](http://ryanfait.com/html5-sticky-footer/)
+* [HTML5 CSS Sticky Footer](http://ryanfait.com/html5-sticky-footer/) (optional)
 * [Hamburgers](https://github.com/jonsuh/hamburgers)
 * [animate.css](https://github.com/daneden/animate.css)
-* [Bourbon](http://bourbon.io/)
 * [GRIDLE{.SCSS}](http://gridle.org/)
-* [Laravel Elixir](https://laravel.com/docs/master/elixir)
-* [laravel-elixir-icons](https://github.com/codezero-be/laravel-elixir-icons)
+* [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
 
 
 ### Google Maps Usage
@@ -37,6 +35,8 @@ Install all packages:
 
 ```
 $ npm install
+# or just run 
+$ yarn
 ```
 
 
@@ -47,22 +47,22 @@ Put your images into directory:
 /src/images/
 ```
 
-and run the following command: 
-
-```
-gulp copy
-```
-
 ### Commands
 
-Run all gulp tasks:
+Compile assets:
 
 ```
-$ gulp
+$ npm run webpack
 ```
 
-Watch all assets:
+Watch for changes in all assets:
 
 ```
-$ gulp watch --production
+$ npm run dev
+```
+
+Build (combine and minify) for production:
+
+```
+$ npm run production
 ```
